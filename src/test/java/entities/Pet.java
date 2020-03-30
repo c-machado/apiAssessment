@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Pet {
 
-    Long id;
+    Integer id;
     HashMap<String, ?> category = new HashMap<>();
     String name = "";
     ArrayList<String> photoUrls = new ArrayList<String>();
@@ -15,7 +15,7 @@ public class Pet {
     public Pet() {
     }
 
-    public Pet(Long id, int categoryId, String categoryName, String name, ArrayList<String> photoUrls, ArrayList<String> tags, String status) {
+    public Pet(Integer id, int categoryId, String categoryName, String name, ArrayList<String> photoUrls, ArrayList<String> tags, String status) {
         this.id = id;
         HashMap<String, Object> petCategory = new HashMap<>();
         petCategory.put("id", categoryId);
@@ -38,11 +38,11 @@ public class Pet {
         return petTags;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
